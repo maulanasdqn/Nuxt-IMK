@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { HOME_SCREEN_TITLE, HOME_SCREEN_SUBTITLE } from "~/utilities/constant";
+import {
+  HOME_SCREEN_TITLE,
+  HOME_SCREEN_SUBTITLE,
+  Benefit,
+} from "~/utilities/constant";
 import { useScroll } from "~/composables/scroll";
 const { scrollPosition } = useScroll();
 
@@ -22,7 +26,7 @@ definePageMeta({
       >
         {{ HOME_SCREEN_TITLE }}
       </h1>
-      <div class="flex w-full">
+      <div class="flex flex-col gap-y-4 w-full">
         <h1 class="text-sm md:text-2xl text-white">
           {{ HOME_SCREEN_SUBTITLE }}
         </h1>
@@ -39,6 +43,15 @@ definePageMeta({
         src="/logo/ads.svg"
         alt=""
       />
+    </div>
+  </NuxtLayout>
+  <NuxtLayout name="benefit" class="bg-gray-900">
+    <div class="flex flex-col px-16 w-full justify-start py-20 h-screen">
+      <h1
+        class="text-white items-center font-bold font-sans text-2xl sm:text-3xl md:text-3xl lg:text-6xl"
+      >
+        Daftar Sekarang
+      </h1>
     </div>
   </NuxtLayout>
 </template>

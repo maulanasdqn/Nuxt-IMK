@@ -4,3 +4,4 @@ export const HOME_SCREEN_SUBTITLE =
 export const HOME_SCREEN_TITLE = "Solusi Iklan Online Anda";
 export const LOGIN = "Masuk";
 export const REGISTER = "Daftar";
+export const Benefit = "Keuntungan yang akan kamu dapat";

@@ -1,5 +1,0 @@
-<template>
-  <main class="flex md:flex-row h-screen w-full items-center justify-between">
-    <slot> </slot>
-  </main>
-</template>

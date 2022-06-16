@@ -5,13 +5,10 @@ const { scrollPosition } = useScroll();
 </script>
 <template>
   <nav
-    class="sticky top-0 flex items-center w-auto h-auto px-16 justify-between py-3"
+    class="sticky top-0 flex items-center w-auto h-auto px-16 justify-between py-3 transition-all duration-300"
   >
     <div class="flex w-full gap-x-4">
-      <h1
-        :class="{ 'text-white': scrollPosition > 50 }"
-        class="font-bold font-bold font-sans text-md"
-      >
+      <h1 class="font-bold font-bold font-sans text-1xl text-white">
         {{ APP_TITLE }}
       </h1>
     </div>
@@ -20,7 +17,7 @@ const { scrollPosition } = useScroll();
         <button
           :class="{
             'text-white bg-gray-700 border-gray-800': scrollPosition > 40,
-            'text-gray-800': scrollPosition == 0,
+            'text-gray-800 bg-white': scrollPosition == 0,
           }"
           class="font-medium font-sans text-md border-2 border-gray-800 rounded-lg w-auto h-auto p-2 hover:text-white hover:bg-blue-400 hover:border-blue-400"
         >
